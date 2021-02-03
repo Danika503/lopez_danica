@@ -1,6 +1,6 @@
 @extends('Layout.master')
 @section('content')
-BIENVENIDOS ALA LIBRERIA
+BIENVENIDOS A LA LIBRERIA
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">

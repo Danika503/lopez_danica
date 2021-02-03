@@ -10,7 +10,7 @@
                 <th scope="col">ISBN</th>
                 <th scope="col">titulo</th>
                 <th scope="col">stock  </th>
-                <th scope="col"> editorial_fk </th>
+                <th scope="col"> editorial </th>
                 <th scope="col">precio</th>
                
                 
@@ -18,19 +18,20 @@
                 </tr>
             </thead>
             <tbody class="table-Light ">
-                @foreach($libros as $ed)
+                @foreach($libros as $li)
                 <tr>
-                <th scope="row">{{$ed->id}}</th>
-                <td> {{$ed->ISBN}}</td>
-                <td> {{$ed->titulo}}</td>
-                <td> {{$ed->stock}}</td>
-                <td> {{$ed->editorial_fk}}</td> 
-                <td> {{$ed->precio}}</td>
+                <th scope="row">{{$li->id}}</th>
+                <td> {{$li->ISBN}}</td>
+                <td> {{$li->titulo}}</td>
+                <td> {{$li->stock}}</td>
+                <td> {{$li->editorial_fk}}</td> 
+                <td> {{$li->precio}}</td>
                  
               
 
                 </tr>
                 @endforeach
+                
             </tbody>
         </table>
     </div>
