@@ -1,8 +1,10 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 
-/*
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\principal;
+use App\Http\Controllers\editorial;
+/*principa
 |--------------------------------------------------------------------------
 | Web Routes
 |--------------------------------------------------------------------------
@@ -13,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [principal::class, 'index']);
+
+Route::get('Editorial', [editorial::class, 'index']);
+Route::get('Listado', [editorial::class, 'listado']);
