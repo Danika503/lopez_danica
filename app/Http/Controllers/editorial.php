@@ -13,6 +13,8 @@ class editorial extends Controller
         return view('editorial', ['editoriales' => $editoriales]);
     }
     public function listado(){
-        return view('listado');
+        $libros = DB::table('libro')->get();
+        return view('listado', ['libros' => $libros]);
+
     }
 }

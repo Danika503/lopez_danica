@@ -14,7 +14,7 @@
             
                 
                 <li class="nav-item active">
-                    <a class="nav-link" href="{{url('/Listado ')}}">Listado <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="{{url('/Listado ')}}">Libro <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="{{url('/Editorial ')}}">Editorial <span class="sr-only">(current)</span></a>
